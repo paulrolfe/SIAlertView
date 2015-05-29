@@ -513,7 +513,7 @@ static SIAlertView *__si_alert_current_view;
     UIWindow *window = self.oldKeyWindow;
 #ifdef __IPHONE_7_0
     if ([window respondsToSelector:@selector(setTintAdjustmentMode:)]) {
-        window.tintAdjustmentMode = self.oldTintAdjustmentMode;
+        window.tintAdjustmentMode = UIViewTintAdjustmentModeAutomatic;
     }
 #endif
     if (!window) {
